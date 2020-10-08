@@ -36,7 +36,7 @@ cron.schedule("5 * * * *", function () {
 					console.log(data.incidents[i]);
 					console.log(data.incidents[i].incidentNumber);
 					// ACK
-					var options_ack_txt = '{ "userName": "emilse", "incidentNumber": [' + data.incidents[i].incidentNumber + '], "message": "" }';
+					var options_ack_txt = '{ "userName": "EmilO", "incidentNumber": [' + data.incidents[i].incidentNumber + '], "message": "" }';
 					var options_ack = {
 						url: 'https://api.victorops.com/api-public/v1/incidents/ack',
 						headers: {
